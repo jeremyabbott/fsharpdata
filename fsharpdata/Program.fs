@@ -3,7 +3,8 @@
 
 open FSharp.Data
 
-type Issue = JsonProvider<"https://api.github.com/repos/fsharp/FSharp.Data/issues">
+type Simple = JsonProvider<""" { "name":"John", "age":94 } """>
+//type Issue = JsonProvider<"https://api.github.com/repos/fsharp/FSharp.Data/issues">
 
 [<EntryPoint>]
 let main argv = 
